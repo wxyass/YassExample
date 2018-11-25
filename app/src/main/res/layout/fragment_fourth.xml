@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/ll_net_container"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/holo_blue_dark"
+              android:orientation="vertical">
+
+
+    <!-- Fragment跳转 -->
+    <LinearLayout
+        android:id="@+id/fourth_rl_01"
+        style="@style/fourth_item_bg">
+
+        <TextView
+            style="@style/fourth_item_img"
+            android:background="@drawable/ic_launcher_background"/>
+
+        <TextView
+            style="@style/system_title_text"
+            android:text="@string/fourth_msg_1"/>
+
+    </LinearLayout>
+
+    <!-- 2 -->
+    <LinearLayout
+        android:id="@+id/fourth_rl_02"
+        style="@style/fourth_item_bg">
+
+        <TextView
+            style="@style/fourth_item_img"
+            android:background="@drawable/ic_launcher_background"/>
+
+        <TextView
+            style="@style/system_title_text"
+            android:text="@string/fourth_msg_2"/>
+
+    </LinearLayout>
+
+    <!-- Fragment中嵌套WebView -->
+    <LinearLayout
+        android:id="@+id/fourth_rl_03"
+        style="@style/fourth_item_bg">
+
+        <TextView
+            style="@style/fourth_item_img"
+            android:background="@drawable/ic_launcher_background"/>
+
+        <TextView
+            style="@style/system_title_text"
+            android:text="@string/fourth_msg_3"/>
+    </LinearLayout>
+
+    <!-- 整体Fragment嵌套WebView -->
+    <LinearLayout
+        android:id="@+id/fourth_rl_04"
+        style="@style/fourth_item_bg">
+
+        <TextView
+            style="@style/fourth_item_img"
+            android:background="@drawable/ic_launcher_background"/>
+
+        <TextView
+            style="@style/system_title_text"
+            android:text="@string/fourth_msg_4"/>
+
+    </LinearLayout>
+
+    <!-- 退出系统 -->
+    <LinearLayout
+        android:id="@+id/fourth_rl_05"
+        style="@style/fourth_item_bg">
+
+        <TextView
+            style="@style/fourth_item_img"
+            android:background="@drawable/ic_launcher_background"/>
+
+        <TextView
+            style="@style/system_title_text"
+            android:text="@string/fourth_msg_5"/>
+    </LinearLayout>
+    <!-- Activity跳转 -->
+    <LinearLayout
+        android:id="@+id/fourth_rl_06"
+        style="@style/fourth_item_bg">
+
+        <TextView
+            style="@style/fourth_item_img"
+            android:background="@drawable/ic_launcher_background"/>
+
+        <TextView
+            style="@style/system_title_text"
+            android:text="@string/fourth_msg_6"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">YassExample</string>
+
+    <!-- fourth -->
+    <string name="fourth_msg_1">1 Fragment跳转</string>
+    <string name="fourth_msg_2">2 webview中的event处理</string>
+    <string name="fourth_msg_3">3 Fragment中嵌套WebView</string>
+    <string name="fourth_msg_4">4 整体Fragment嵌套WebView</string>
+    <string name="fourth_msg_5">5 退出系统</string>
+    <string name="fourth_msg_6">6 Activity跳转</string>
+</resources>

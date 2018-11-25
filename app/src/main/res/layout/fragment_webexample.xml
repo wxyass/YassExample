@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/ll_net_container"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_app"
+              android:orientation="vertical">
+
+    <include layout="@layout/top_navigation"/>
+
+    <!-- 本地 -->
+    <LinearLayout
+        android:id="@+id/fourth_web_local_01"
+        style="@style/fourth_item_bg">
+
+        <TextView
+            style="@style/fourth_item_img"
+            android:background="@drawable/ic_launcher_background"/>
+
+        <TextView
+            style="@style/system_title_text"
+            android:text="本地"/>
+
+    </LinearLayout>
+
+    <!-- 网络 -->
+    <LinearLayout
+        android:id="@+id/fourth_web_net_01"
+        style="@style/fourth_item_bg">
+
+        <TextView
+            style="@style/fourth_item_img"
+            android:background="@drawable/ic_launcher_background"/>
+
+        <TextView
+            style="@style/system_title_text"
+            android:text="网络"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/web_fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

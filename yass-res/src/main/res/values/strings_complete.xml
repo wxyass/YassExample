@@ -1,0 +1,20 @@
+<resources>
+    <string name="tip_single_multi">登录,根据返回信息不同,进入不同界面</string>
+    <string name="btn_basic">业代版本</string>
+    <string name="btn_normal">督导版本</string>
+    <string name="btn_complicated">主管版本</string>
+
+    <!--业代导航栏-->
+    <string name="msg">第一</string>
+    <string name="discover">第二</string>
+    <string name="colckingin">第三</string>
+    <string name="groupchat">第四</string>
+    <string name="more">第五</string>
+
+    <!--业代拜访底部文字-->
+    <string name="plus_addterm">新增终端</string>
+    <string name="plus_termnum">终端数量</string>
+    <string name="plus_todaything">备忘录</string>
+    <string name="plus_proshow">产品展示</string>
+
+</resources>

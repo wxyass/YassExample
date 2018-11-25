@@ -1,0 +1,125 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    dexOptions {
+        jumboMode true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation( 'com.android.support.test.espresso:espresso-core:3.0.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    //Android Support包
+    implementation "com.android.support:appcompat-v7:$rootProject.v4Version"
+    implementation "com.android.support:design:$rootProject.v4Version"
+    implementation "com.android.support:cardview-v7:$rootProject.v4Version"
+    implementation "com.android.support:recyclerview-v7:$rootProject.v4Version"
+    implementation "com.android.support:support-v4:$rootProject.v4Version"
+    implementation "com.android.support:support-v13:$rootProject.v4Version"
+    implementation 'com.android.support:multidex:1.0.1'
+    // compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    // 数据库  http://ormlite.com
+    implementation 'com.j256.ormlite:ormlite-android:5.0'
+    implementation 'com.j256.ormlite:ormlite-core:5.0'
+
+    // Fragmentation  https://github.com/YoKeyword/Fragmentation
+    api 'me.yokeyword:fragmentation:1.3.6'
+    api 'me.yokeyword:fragmentation-swipeback:1.3.6'
+    api 'me.yokeyword:eventbus-activity-scope:1.1.0'
+    api 'org.greenrobot:eventbus:3.0.0'
+
+    // loader依赖
+    compile 'com.wang.avi:library:2.1.3'
+
+    // JSON解析依赖 Android版
+    compile 'com.alibaba:fastjson:1.1.57.android'
+
+    // 拼音处理
+    compile 'com.github.SilenceDut:jpinyin:v1.0'
+
+    // java类补充库(适配6.0)
+    implementation files('libs/commons-lang-2.6.jar')
+    implementation files('libs/org.apache.http.legacy.jar')
+    implementation files('libs/sun.misc.BASE64Decoder.jar')
+
+    // 日志
+    compile 'com.orhanobut:logger:2.1.1'
+
+    // banner
+    //Banner依赖
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    compile 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+
+    //网络请求依赖
+    compile 'com.squareup.okhttp3:okhttp:3.8.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.okio:okio:1.13.0'
+
+    // 字体图标
+    compile 'com.joanzapata.iconify:android-iconify-fontawesome:2.2.2'
+    compile 'com.joanzapata.iconify:android-iconify-ionicons:2.2.2'
+
+    //图片处理
+    compile 'com.github.bumptech.glide:okhttp3-integration:4.0.0-RC0@aar'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0-RC0'
+    compile 'com.github.bumptech.glide:glide:4.0.0-RC0'
+
+    // 资源库
+    implementation project(':yass-res')
+
+    // ListView 拖动排序
+    compile 'com.yydcdut:sdlv:0.7.6'
+
+    // 滑动按钮 Suggestion: add 'tools:replace="android:theme"' to <application> element at AndroidManifest.xml:43
+    compile 'com.leaking.slideswitch:slideswitch:1.0.0'
+
+    //implementation 'com.afollestad.material-dialogs:core:2.0.0-beta2'
+
+    //工具包
+    compile 'com.blankj:utilcode:1.10.0'
+
+    // 图片拉伸展示
+    compile 'com.github.chrisbanes:PhotoView:2.0.0'
+
+    // 动态次渠道加载
+    compile 'com.nex3z:flow-layout:1.2.2'
+
+    // 上拉加载下拉舒心
+    compile 'in.srain.cube:ultra-ptr:1.0.11'
+
+    // 录音
+    implementation 'com.google.code.gson:gson:2.8.5'
+    compile 'com.czt.mp3recorder:library:1.0.3'
+    compile 'com.mylhyl:acp:1.1.5'
+
+    // 圆形图片 https://github.com/hdodenhof/CircleImageView
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+}
